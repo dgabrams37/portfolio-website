@@ -5,6 +5,10 @@ Secondary color (White): #ffffff
 Text color (black): #000000
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #ffffff;
     font-family: 'PT Sans', sans-serif;
@@ -21,21 +25,25 @@ h4 {
 }
 
 h1 {
+    font-family: 'Nunito', sans-serif;
     font-size: 2.55em;
     font-weight: 700;
 }
 
 h2 {
+    font-family: 'Nunito', sans-serif;
     font-size: 2.45 em;
     font-weight: 700;
 }
 
 h3 {
+    font-family: 'Nunito', sans-serif;
     font-size: 1.3em;
     font-weight: 400;
 }
 
 h4 {
+    font-family: 'Nunito', sans-serif;
     font-size: 1.25 em;
     font-weight: 400;
 }
@@ -45,12 +53,12 @@ img {
 }
 
 a {
-    color: #048998;
+    color: #fff;
     text-decoration: none;
 }
 
 a:visited {
-    color: #048998;
+    color: #fff;
 }
 
 a:hover,
@@ -90,12 +98,17 @@ a:active {
     border-bottom: 2px solid #067d8a;
 }
 
-.button.contact:hover,
-.button.contact:focus,
+
 .button.resume:hover,
 .button.resume:focus {
     background-color: #048998;
     color: #fff;
+}
+
+.button.contact:hover,
+.button.contact:focus {
+    background-color: rgb(196, 196, 196);
+    color: #000;
 }
 
 .button.contact:active,
@@ -103,3 +116,78 @@ a:active {
     background-color: #055c66;
     text-decoration: none;
 }
+
+/*Layout styling*/
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 25px 0; /*25px top and bottom o left and right*/
+    }
+
+#work .row {
+        padding-bottom: 25px; border-bottom: 1px solid #000
+    }
+
+#hero h1 {
+        text-align: center;
+    }
+
+.logo {
+    max-width: 250px;
+}
+
+header {
+    background-color: #048998;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    background: #048998; 
+	border: solid #048998 1px; 
+	box-shadow: 0 14px 28px rgba(0, 76, 84, 0.5)  ; 
+	-webkit-box-shadow: 0 14px 28px rgba(0, 76, 84, 0.5)  ; 
+	-moz-box-shadow: 0 14px 28px rgba(0, 76, 84, 0.5)  ; 
+}
+
+footer {
+    background-color: #048998;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+}
+
+nav > ul > li > a:hover {
+    color: #fff
+}
+
+#hero {
+    background-color: #fff;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#contact {
+    color: #fff;
+}
+
