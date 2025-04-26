@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary color (blue): #048998 
+Primary color (blue): #048391
 Secondary color (White): #ffffff
 Text color (black): #000000
 */
@@ -73,27 +73,8 @@ a:active {
 
 /*Navigation Styling*/
 
-nav>ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
 .navtoggle li:not(:last-child) {
     display: none;
-}
-
-nav>ul>li>a {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #fff;
-}
-
-nav>ul>li>a:hover,
-nav>ul>li>a:focus {
-    color: #e0977d
-    text-decoration: none;
 }
 
 .navtoggle, 
@@ -109,24 +90,33 @@ nav>ul>li>a:focus {
     padding-right: 0;
 }
 
-.navtoggle.responsive nav {
-    padding:  24px 0 0;
-}
-
 .navtoggle.responsive li {
     display: block;
-    padding: 10px 0;
-    border-top: 1px solid white;
+    padding: 10 px;
 }
 
-.navtoggle.responsive li:last-child {
-    padding: 0 0 10px;
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav>ul>li>a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>a:focus {
+    color: #e0977d
 }
 
 /*button needs to be at end of stylesheet */
 .button {
     display: inline-block;
-    background-color: #048998;
+    background-color: #048391;
     color: #ffffff;
     font-weight: 400;
     text-decoration: none;
@@ -145,16 +135,16 @@ nav>ul>li>a:focus {
 .button.contact,
 .button.resume {
     background-color: #fff;
-    color: #048998;
+    color: #048391;
     text-transform: uppercase;
-    border: 2px solid #048998;
+    border: 2px solid #048391;
     border-bottom: 2px solid #067d8a;
 }
 
 
 .button.resume:hover,
 .button.resume:focus {
-    background-color: #048998;
+    background-color: #048391;
     color: #fff;
 }
 
@@ -200,19 +190,19 @@ nav>ul>li>a:focus {
 }
 
 header {
-    background-color: #048998;
-    padding: 10px 0 4px;
+    background-color: #048391;
+    padding: 15px 0 10px;
     position: relative;
     width: 100%;
-    background: #048998;
-    border: solid #048998 1px;
+    background: #048391;
+    border: solid #048391 1px;
     box-shadow: 0 14px 28px rgba(0, 76, 84, 0.5);
     -webkit-box-shadow: 0 14px 28px rgba(0, 76, 84, 0.5);
     -moz-box-shadow: 0 14px 28px rgba(0, 76, 84, 0.5);
 }
 
 footer {
-    background-color: #048998;
+    background-color: #048391;
     text-align: center;
     padding: 10px 0;
     position: relative;
@@ -271,7 +261,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
     header {
         text-align: unset;
-        padding: 20px 0 13px;
+        padding: 20px 0 15px;
     }
 
     .logo {
@@ -306,11 +296,7 @@ Medium devices (640px and larger)
     nav {
         width: auto;
         float: right;
-        margin-top: 25px;
-    }
-
-    nav > ul {
-        margin: 1 em 0;
+        margin-top: 0;
     }
 
     nav > ul >li {
@@ -325,6 +311,9 @@ Medium devices (640px and larger)
         display: none;
     }
    
+    nav > ul {
+        margin: 10px 0;
+    }
 }
 
 /* ==============================
@@ -333,18 +322,22 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
     header {
         text-align: unset;
-        padding: 20px 0 13px;
+        padding: 20px 0 12px;
     }
 .logo {
     max-width: 250px;
-}
+    }
 
     nav {
         width: auto;
         float: right;
-        margin-top: 25px;
+        margin-top: 0;
     }
-    
+
+    nav > ul {
+        margin: 10px 0;
+    }
+
     body {
         font-size: 20px;
     }
@@ -372,5 +365,3 @@ Large devices (1024px or larger)
         margin-right: auto;
     }
 }
-
-

@@ -1,161 +1,191 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
+  <head>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/343de73f7d.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="author" content="DevinAbrams">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Mallow Moon, a boutique candy store created by Devin Abrams.">
+    <meta name="description"
+      content="UI designer portfolio for Devin Abrams, located in Colorado Springs.">
     <title>Mallow Moon</title>
-</head>
+  </head>
 
-<body id="home">
+
+  <body id="home">
     <header>
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-                <img class="logo" img src="./images/logo.png" alt="Devin Abrams logo">
-                <nav>
-                    <ul class="navigation">
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                    class="fa-solid fa-bars"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <img class="logo" src="./images/logo.png" alt="Devin Abrams logo">
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Portfolio</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fa-solid fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
 
-
     <main>
-        <div>
-            <div id="hero">
-                <div class="container">
-                    <h1><span>Mallow Moon</span></h1>
-                    <picture>
-                        <source srcset="images/mallowmoon/mallow_moon_project_image_1x.png" media="(max-width:767px)">
-                        <img src="images/mallowmoon/mallow_moon_project_image_2x.png" alt="Mallow Moon">
-                    </picture>
-                    <p>Mallow Moon is a boutique candy store, the brand combines the lighthearted nature of candy with a
-                        clean and whimsical aesthetic, offering an experience that feels both playful and polished.
-                    </p>
-                </div>
-            </div>
-            <div id="work">
-                <div class="container">
-                    <h2><span>My Process</span></h2>
-                    <h3>Problem Statement:</h3>
-                    <p>Users struggle to quickly assess whether a store has the items they need due to the lack of
-                        advanced filtering tools. The shopping process is further complicated by the inability to
-                        add
-                        multiple items to a cart and limited payment options make it less convenient.
-                    </p>
-                    <h3>Solution:</h3>
-                    <p>Mallow Moon is designed for people who prefer shopping online rather than visiting physical
-                        stores, particularly benefiting those who have difficulty finding items in traditional
-                        stores.
-                        It caters to tech-savvy users, offering a simple,
-                        clean design with easy navigation and advanced filter options. Users can easily
-                        use Mallow Moon on the go to purchase items, and have them delivered to any address.
-                    </p>
-                    <div>
-                        <h3>User Flow Diagram</h3>
-                        <picture>
-                            <source srcset="images/mallowmoon/mallow_moon_user_flow_1x.png" media="(max-width:767px)">
-                            <img src="images/mallowmoon/mallow_moon_user_flow_2x.png" alt="Mallow Moon">
-                        </picture>
-                    </div>
-                    <div>
-                        <h3>Mid-Fidelity Wireframe</h3>
-                        <picture>
-                            <source srcset="./images/mallowmoon/mid_fidelity_wireframe_1x.png"
-                                media="(max-width:767px)">
-                            <img src="./images/mallowmoon/mid_fidelity_wireframe_2x.png" alt="Mallow Moon">
-                        </picture>
-                    </div>
-                    <div>
-                        <h3>Style Sheet</h3>
-                        <picture>
-                            <source srcset="./images/mallowmoon/mallow_moon_style_sheet_1x.png"
-                                media="(max-width:767px)">
-                            <img src="./images/mallowmoon/mallow_moon_style_sheet_2x.png" alt="Mallow Moon">
-                        </picture>
-                    </div>
-                    <div>
-                        <h3>User Testing</h3>
-                        <h4>User Testing Results:</h4>
-                        <p> Users prefer an option to exit the search filters and find the "Dietary"
-                            filter vague and confusing. Users noted the need to input the billing address separately
-                            from the
-                            shipping address. Unlike the search results, the "Best Sellers" section lacked
-                            add-to-cart
-                            buttons
-                            or prices. Users suggested a confirmation popup after adding an item to the cart with an
-                            option to
-                            continue shopping. The shopping cart's item ratings were unnecessary, and users wanted
-                            additional
-                            payment options. Webpages lacked headers like "Cart" or "Home," and customers asked for
-                            more
-                            thorough product details including ingredients, allergies, and nutritional information.
-                        </p>
-                        <h4>Key Insights from Testing:</h4>
-                        <p>
-                            The suggestions significantly impacted the website design and usability
-                            by highlighting key areas for improvement.; this included missing elements like
-                            continuing
-                            shopping,
-                            a billing address, and payment methods. User flow was improved by allowing users to exit
-                            out
-                            of
-                            search results and a confirmation popup after adding items to the cart for smoother
-                            navigation.
-                            Additionally, removing unnecessary information and condensing the search results page
-                            allowed for a
-                            cleaner design. Finally, providing more detailed product information, including
-                            ingredients
-                            and
-                            nutritional details, would support informed decision-making, improving overall user
-                            experience.
-                        </p>
-                    </div>
-                    <div>
-                        <h3>Hi-Fidelity Wireframes</h3>
-                        <picture>
-                            <source srcset="./images/mallowmoon/hi_fidelity_wireframe_1x.png" media="(max-width:767px)">
-                            <img src="./images/mallowmoon/hi_fidelity_wireframe_2x.png" alt="Mallow Moon">
-                        </picture>
-                    </div>
-                </div>
+      <div id="hero">
+        <div class="container">
+          <h1><span>Mallow Moon</span></h1>
+          <picture>
+            <source
+              srcset="images/mallowmoon/mallow_moon_project_image_1x.png"
+              media="(max-width:767px)">
+            <img
+              src="images/mallowmoon/mallow_moon_project_image_2x.png"
+              alt="Mallow Moon">
+          </picture>
+          <p>
+            Mallow Moon is a boutique candy store, the brand combines the
+            lighthearted nature of candy with a clean and whimsical aesthetic,
+            offering an experience that feels both playful and polished.
+          </p>
+        </div>
+      </div>
+      <div id="work">
+        <div class="container">
+          <h2><span>My Process</span></h2>
+          <h3>Problem Statement:</h3>
+          <p>
+            Users struggle to quickly assess whether a store has the items they
+            need due to the lack of advanced filtering tools. The shopping
+            process is further complicated by the inability to add multiple
+            items to a cart and limited payment options make it less convenient.
+          </p>
+          <h3>Solution:</h3>
+          <p>
+            Mallow Moon is designed for people who prefer shopping online rather
+            than visiting physical stores, particularly benefiting those who
+            have difficulty finding items in traditional stores. It caters to
+            tech-savvy users, offering a simple, clean design with easy
+            navigation and advanced filter options. Users can easily use Mallow
+            Moon on the go to purchase items, and have them delivered to any
+            address.
+          </p>
+          <div>
+            <h3>User Flow Diagram</h3>
+            <picture>
+              <source
+                srcset="images/mallowmoon/mallow_moon_user_flow_1x.png"
+                media="(max-width:767px)">
+              <img
+                src="images/mallowmoon/mallow_moon_user_flow_2x.png"
+                alt="Mallow Moon">
+            </picture>
+          </div>
+          <div>
+            <h3>Mid-Fidelity Wireframe</h3>
+            <picture>
+              <source
+                srcset="./images/mallowmoon/mid_fidelity_wireframe_1x.png"
+                media="(max-width:767px)">
+              <img
+                src="./images/mallowmoon/mid_fidelity_wireframe_2x.png"
+                alt="Mallow Moon">
+            </picture>
+          </div>
+          <div>
+            <h3>Style Sheet</h3>
+            <picture>
+              <source
+                srcset="./images/mallowmoon/mallow_moon_style_sheet_1x.png"
+                media="(max-width:767px)">
+              <img
+                src="./images/mallowmoon/mallow_moon_style_sheet_2x.png"
+                alt="Mallow Moon">
+            </picture>
+          </div>
+          <div>
+            <h3>User Testing</h3>
+            <h4>User Testing Results:</h4>
+            <p>
+              Users prefer an option to exit the search filters and find the
+              "Dietary" filter vague and confusing. Users noted the need to
+              input the billing address separately from the shipping address.
+              Unlike the search results, the "Best Sellers" section lacked
+              add-to-cart buttons or prices. Users suggested a confirmation
+              popup after adding an item to the cart with an option to continue
+              shopping. The shopping cart's item ratings were unnecessary, and
+              users wanted additional payment options. Webpages lacked headers
+              like "Cart" or "Home," and customers asked for more thorough
+              product details including ingredients, allergies, and nutritional
+              information.
+            </p>
+            <h4>Key Insights from Testing:</h4>
+            <p>
+              The suggestions significantly impacted the website design and
+              usability by highlighting key areas for improvement.; this
+              included missing elements like continuing shopping, a billing
+              address, and payment methods. User flow was improved by allowing
+              users to exit out of search results and a confirmation popup after
+              adding items to the cart for smoother navigation. Additionally,
+              removing unnecessary information and condensing the search results
+              page allowed for a cleaner design. Finally, providing more
+              detailed product information, including ingredients and
+              nutritional details, would support informed decision-making,
+              improving overall user experience.
+            </p>
+          </div>
+          <div>
+            <h3>Hi-Fidelity Wireframes</h3>
+            <picture>
+              <source
+                srcset="./images/mallowmoon/hi_fidelity_wireframe_1x.png"
+                media="(max-width:767px)">
+              <img
+                src="./images/mallowmoon/hi_fidelity_wireframe_2x.png"
+                alt="Mallow Moon">
+            </picture>
+          </div>
+        </div>
+      </div>
     </main>
 
-
     <footer id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <div>
-                <p>Call:<a href="tel:+11234567890"> +1 123-456-7890</a></p>
-                <p>Email:<a href="mailto:abrams.devin@icloud.com"> abrams.devin@icloud.com</a></p>
-            </div>
-            <div>
-                <p><a href="https://www.linkedin.com/in/devin-abrams-384a70266/" target="_blank">Linkedin</a>
-                    <a href="https://www.linkedin.com/in/devin-abrams-384a70266/" target="_blank">Behance</a>
-                </p>
-            </div>
-            <div>Copyright Devin Abrams 2025</div>
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div>
+          <p>Call:<a href="tel:+11234567890"> +1 123-456-7890</a></p>
+          <p>
+            Email:<a href="mailto:abrams.devin@icloud.com">
+              abrams.devin@icloud.com</a>
+          </p>
         </div>
+        <div>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/devin-abrams-384a70266/"
+              target="_blank"
+              >Linkedin</a>
+            <a
+              href="https://www.linkedin.com/in/devin-abrams-384a70266/"
+              target="_blank"
+              >Behance</a>
+          </p>
+        </div>
+        <div>Copyright Devin Abrams 2025</div>
+      </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-
-</body>
-
+  </body>
 </html>
